@@ -4,16 +4,11 @@ class SessionsController < ApplicationController
   end
 
   def create
-
+    
   end
 
   def destroy
     session.delete :name
     redirect_to controller: 'application', action: 'intro'
-  end
-
-  private
-  def current_user
-
   end
 end
